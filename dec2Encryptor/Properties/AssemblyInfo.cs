@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("dec2Encryptor")]
 [assembly: AssemblyDescription("A multifunktional Encryption Library")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("FriedrichRehren")]
+[assembly: AssemblyCompany("Friedrich Rehren")]
 [assembly: AssemblyProduct("dec2Encryptor")]
 [assembly: AssemblyCopyright("Copyright ©FriedrichRehren 2019")]
 [assembly: AssemblyTrademark("")]
