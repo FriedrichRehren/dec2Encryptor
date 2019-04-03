@@ -44,8 +44,28 @@ namespace dec2Encryptor
             byte[] bytesEncrypted = null;
             switch (algorythm)
             {
+                case Algorythms.AES128:
+                    bytesEncrypted = Algorythm.AES128.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
+                case Algorythms.AES160:
+                    bytesEncrypted = Algorythm.AES160.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
+                case Algorythms.AES192:
+                    bytesEncrypted = Algorythm.AES192.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
+                case Algorythms.AES224:
+                    bytesEncrypted = Algorythm.AES224.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
                 case Algorythms.AES256:
                     bytesEncrypted = Algorythm.AES265.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
+                case Algorythms.RSA2048:
+                    bytesEncrypted = Algorythm.RSA2048.Encrypt(bytesToBeEncrypted, password);
                     break;
 
                 default:
@@ -93,8 +113,28 @@ namespace dec2Encryptor
             byte[] bytesEncrypted = null;
             switch (algorythm)
             {
+                case Algorythms.AES128:
+                    bytesEncrypted = Algorythm.AES128.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
+                case Algorythms.AES160:
+                    bytesEncrypted = Algorythm.AES160.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
+                case Algorythms.AES192:
+                    bytesEncrypted = Algorythm.AES192.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
+                case Algorythms.AES224:
+                    bytesEncrypted = Algorythm.AES224.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
                 case Algorythms.AES256:
                     bytesEncrypted = Algorythm.AES265.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
+                case Algorythms.RSA2048:
+                    bytesEncrypted = Algorythm.RSA2048.Encrypt(bytesToBeEncrypted, passwordBytes);
                     break;
 
                 default:
@@ -130,8 +170,23 @@ namespace dec2Encryptor
             //Return Encrypted Stream with respect of choosen Algorythm
             switch (algorythm)
             {
+                case Algorythms.AES128:
+                    return Algorythm.AES128.Encrypt(input, password);
+
+                case Algorythms.AES160:
+                    return Algorythm.AES160.Encrypt(input, password);
+
+                case Algorythms.AES192:
+                    return Algorythm.AES192.Encrypt(input, password);
+
+                case Algorythms.AES224:
+                    return Algorythm.AES224.Encrypt(input, password);
+
                 case Algorythms.AES256:
                     return Algorythm.AES265.Encrypt(input, password);
+
+                case Algorythms.RSA2048:
+                    return Algorythm.RSA2048.Encrypt(input, password);
 
                 default:
                     return Algorythm.AES265.Encrypt(input, password);
@@ -168,8 +223,23 @@ namespace dec2Encryptor
             //Return Encrypted Stream with respect of choosen Algorythm
             switch (algorythm)
             {
+                case Algorythms.AES128:
+                    return Algorythm.AES128.Encrypt(input, passwordBytes);
+
+                case Algorythms.AES160:
+                    return Algorythm.AES160.Encrypt(input, passwordBytes);
+
+                case Algorythms.AES192:
+                    return Algorythm.AES192.Encrypt(input, passwordBytes);
+
+                case Algorythms.AES224:
+                    return Algorythm.AES224.Encrypt(input, passwordBytes);
+
                 case Algorythms.AES256:
                     return Algorythm.AES265.Encrypt(input, passwordBytes);
+
+                case Algorythms.RSA2048:
+                    return Algorythm.RSA2048.Encrypt(input, passwordBytes);
 
                 default:
                     return Algorythm.AES265.Encrypt(input, passwordBytes);
@@ -210,8 +280,28 @@ namespace dec2Encryptor
             byte[] bytesEncrypted = null;
             switch (algorythm)
             {
+                case Algorythms.AES128:
+                    bytesEncrypted = Algorythm.AES128.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
+                case Algorythms.AES160:
+                    bytesEncrypted = Algorythm.AES160.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
+                case Algorythms.AES192:
+                    bytesEncrypted = Algorythm.AES192.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
+                case Algorythms.AES224:
+                    bytesEncrypted = Algorythm.AES224.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
                 case Algorythms.AES256:
                     bytesEncrypted = Algorythm.AES265.Encrypt(bytesToBeEncrypted, password);
+                    break;
+
+                case Algorythms.RSA2048:
+                    bytesEncrypted = Algorythm.RSA2048.Encrypt(bytesToBeEncrypted, password);
                     break;
 
                 default:
@@ -261,8 +351,28 @@ namespace dec2Encryptor
             byte[] bytesEncrypted = null;
             switch (algorythm)
             {
+                case Algorythms.AES128:
+                    bytesEncrypted = Algorythm.AES128.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
+                case Algorythms.AES160:
+                    bytesEncrypted = Algorythm.AES160.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
+                case Algorythms.AES192:
+                    bytesEncrypted = Algorythm.AES192.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
+                case Algorythms.AES224:
+                    bytesEncrypted = Algorythm.AES224.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
                 case Algorythms.AES256:
                     bytesEncrypted = Algorythm.AES265.Encrypt(bytesToBeEncrypted, passwordBytes);
+                    break;
+
+                case Algorythms.RSA2048:
+                    bytesEncrypted = Algorythm.RSA2048.Encrypt(bytesToBeEncrypted, passwordBytes);
                     break;
 
                 default:
@@ -298,8 +408,23 @@ namespace dec2Encryptor
             //Return Encrypted Byte Array with respect of choosen Algorythm
             switch (algorythm)
             {
+                case Algorythms.AES128:
+                    return Algorythm.AES128.Encrypt(input, password);
+
+                case Algorythms.AES160:
+                    return Algorythm.AES160.Encrypt(input, password);
+
+                case Algorythms.AES192:
+                    return Algorythm.AES192.Encrypt(input, password);
+
+                case Algorythms.AES224:
+                    return Algorythm.AES224.Encrypt(input, password);
+
                 case Algorythms.AES256:
                     return Algorythm.AES265.Encrypt(input, password);
+
+                case Algorythms.RSA2048:
+                    return Algorythm.RSA2048.Encrypt(input, password);
 
                 default:
                     return Algorythm.AES265.Encrypt(input, password);
@@ -336,8 +461,23 @@ namespace dec2Encryptor
             //Return Encrypted Byte Array with respect of choosen Algorythm
             switch (algorythm)
             {
+                case Algorythms.AES128:
+                    return Algorythm.AES128.Encrypt(input, passwordBytes);
+
+                case Algorythms.AES160:
+                    return Algorythm.AES160.Encrypt(input, passwordBytes);
+
+                case Algorythms.AES192:
+                    return Algorythm.AES192.Encrypt(input, passwordBytes);
+
+                case Algorythms.AES224:
+                    return Algorythm.AES224.Encrypt(input, passwordBytes);
+
                 case Algorythms.AES256:
                     return Algorythm.AES265.Encrypt(input, passwordBytes);
+
+                case Algorythms.RSA2048:
+                    return Algorythm.RSA2048.Encrypt(input, passwordBytes);
 
                 default:
                     return Algorythm.AES265.Encrypt(input, passwordBytes);
